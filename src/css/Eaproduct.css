@@ -1,0 +1,133 @@
+.Eaproduct .landingpage{
+    margin: 0 auto;
+    padding: 0 100px;
+    padding-bottom: 5rem;
+    background-color: rgba(255, 255, 255, 0.99);
+
+}
+.Eaproduct::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 173px;
+    left:20%;
+    top: 180px;
+    filter: blur(180px);
+    background-color: #d13aff4f;
+}
+.Eaproduct::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 120px;
+    left: 60%;
+    top: 500px;
+    background-color: #ff7474c9;
+    filter: blur(90px);
+}
+
+.Eaitems{
+    margin-top: 20px;
+}
+.Eaitems Button{
+    background-color: var(--color-infotextblue);
+}
+.Eaitems Button:hover{
+    background-color: var(--color-primary);
+}
+.containerProduct .container1{
+    padding: 0px 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.543);
+}
+
+.containerProduct .infobox-medium{
+    padding-top: 60px;
+    color: var(--black-color);
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.containerProduct .infobox-slimtext{
+  margin-top: 50px;
+  color: var(--black-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.containerProduct .infobox-headingtext{
+    margin-top: 50px;
+    color: var(--black-color2);
+    font-size: 1.35em    ;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+.Divider{
+    margin-top: 50px;
+}
+
+.Paragraph-howto{
+    margin-top: 20px;
+}
+
+/* ---------------------------- setting css ----------------------------*/
+
+.settingitems .Carditem {
+    margin-top: 10%;
+    max-height: 500px;
+    background-color: #f4f6ff68;
+    border: 40px;
+}
+
+.settingitems .Carditem Button{
+    background-color: var(--color-infotextblue);
+}
+.settingitems .Carditem Button:hover{
+    background-color: var(--color-primary);
+}
+
+
+
+/*----------------------------Model warning-message-------------------------*/
+.Btn-singin {
+    background-color: var(--color-infotextblue);
+
+}
+.Btn-singin:hover{
+    background-color: var(--color-infotextblue);
+    background-color: var(--color-primary);
+}
+
+
+
+/*----------------------------media mobie-------------------------*/
+
+
+@media (max-width: 750px) {
+
+    .Eaproduct .landingpage{
+        padding: 0 2rem;
+        padding-bottom: 5rem;
+    }
+    .settingitems-flex {
+    flex-direction: column;
+    align-content: center
+    }
+
+    .settingitems-flex .Col-flex{
+        max-width: 500px;
+        max-height: 500px;
+
+    }
+    
+}
+
+

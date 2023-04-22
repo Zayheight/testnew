@@ -1,0 +1,412 @@
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    max-width: 100%;
+  
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .home .landingpage {
+    margin: 0 auto;
+    padding: 0 100px;
+    max-width: 100%;
+    padding-bottom: 5rem;
+  
+    background-color: var(--color-background);
+  
+  }
+  
+  body.home::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    left: 60%;
+    top: 400px;
+    filter: blur(140px);
+    background-color: #fb37ff;
+  }
+  body.home::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    left: 80%;
+    top: 550px;
+    background-color: #18b2de;
+    filter: blur(80px);
+  }
+  
+  
+  
+  /* ------------------------- contentbox1 component------------------------- */
+  
+  .landingpage .box {
+    display: flex;
+    align-items: center;
+    margin-top: 140px;
+    max-width: 100%;
+    justify-content: space-around;
+  
+  }
+  
+  .box .infobox {
+    animation-name: leftslide;
+    animation-duration: 0.8s;
+    max-height: 500px;
+    max-width: 60%;
+    margin-bottom: 120px
+  }
+  .box .infobox-boldtext {
+    margin: 0;
+    color: var(--black-color);
+    font-size: 45px;
+    font-weight: 600;
+    text-align: left;
+  }
+  .box .infobox-slimtext {
+    margin: 26px 0;
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
+  }
+  .box .infobox-btnwrapper {
+    display: flex;
+  }
+  
+  .card-info p {
+    font-size: 20px;
+    font-weight: 500;
+    align-self: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 22px;
+  }
+  .card-info .link_A {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: max-content 10px;
+    align-items: center;
+    column-gap: 7px;
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center;
+    transform: translateX(0px);
+    transition: transform 1s ease-out;
+  }
+  .card-info .link_A:hover {
+    color:var(--black-color-hover);
+    transform: translateX(30px);
+  }
+  .card-info .link_A:hover svg {
+    color: var(--black-color-hover);
+    transform: translateX(5px);
+  }
+  .card-info svg {
+    width: 20px;
+    height: 10px;
+    transform: translateX(0px);
+    transition: transform 0.3s ease-out;
+  }
+  .card-info svg line {
+    stroke: var(--black-color);
+  }
+  
+  
+  
+  @keyframes leftslide {
+  from {
+    transform: translateX(-700px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+  }
+  @keyframes rightslide {
+  from {
+    transform: translateX(550px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+  }
+  
+  
+  
+  /* ---------------------------- -Vidio content1 ----------------------------*/
+  
+  
+  .Box3{
+    padding: 0 100px;
+    max-width: 100%;
+    margin-top: 20px;
+    background-color: #E9EDF9;
+  }
+  
+  .Box3 .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+  }
+  
+  svg.imgAmico{
+    max-width: 70px;
+  }
+  
+  .contenimg1{
+    max-width: 400px ;
+    display: inline-flex;  
+  }
+  .content1-home .container{
+    padding-top: 50px;
+  }
+  
+  .content1-home .container .infobox-slimtext {
+    margin-top: 20px;
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
+  }
+  
+  .Box3 .container .infobox-boldtext{
+    color: var(--black-color);
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  
+  .content1-home .container .row .col-sm{
+    width:450px;
+    height:310px
+  }
+  .Box3 .container .seemorebtn{
+    margin-top: 20px;
+    background-color: #0085aa;
+  }
+  .Box3 .container .seemorebtn:hover{
+    margin-top: 20px;
+    background-color: #27bae3;
+  }
+  .imgEais{
+    margin-top: 20px;
+  }
+  
+  
+  
+  /* ---------------------------button ดูเพิ่มเติม -----------------------*/
+  .box .infobox-explorebtn {
+  margin-left: 70%;
+  border-color: black;
+  border-radius: 0.1px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 8px 38px;
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: -1px;
+  color: var(--black-color);
+  }
+  
+  .box .infobox-explorebtn:hover{
+  
+  background: linear-gradient(103.91deg, #9b51e0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+  border: none;
+  transition-delay: 1s;
+  
+  }
+  
+  
+  /*----------------------  ContenBox2 component--------------------- */
+  .landingpage .box2 {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    flex-direction: column;
+  }
+  
+  .box2 .infobox {
+    max-height: 900px;
+    padding: 0px 80px;
+    text-align: center;
+  }
+  .box2 .infobox-boldtext {
+    margin: 0;
+    color: var(--black-color);
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  .box2 .infobox-slimtext {
+    margin: 26px 0;
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  
+  .infobox2 {
+      
+  }
+  .infobox2-items{
+      padding: 60px 50px;
+      position: relative;
+      display: grid;
+      grid-template-columns: auto auto auto ;
+      grid-column-gap: 50px;
+      grid-row-gap: 30px;
+      justify-content: space-between;
+  }
+  .infobox2-items .itemwrapper p{
+      width: 150px;
+      margin: 0;
+      margin-top: 10px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--black-color);
+  }
+  
+  .infobox2-items-item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 130px;
+      border-radius: 18px;
+      background-color: red;
+      background: rgba(215, 238, 234, 0.095);
+      box-shadow: inset 2.01px -2.01px 20px rgba(152, 152, 152, 0.17), inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.39);
+      backdrop-filter: blur(74.4293px);
+  }
+  
+  @media (max-width: 750px) {
+    body.home::before {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 123px;
+      left: 16%;
+      top: 360px;
+      filter: blur(140px);
+      background-color: #fb37ff;
+    }
+    body.home::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 123px;
+      left: 60%;
+      top: 160%;
+      background-color: #18b2de;
+      filter: blur(160px);
+    }
+    .home .landingpage{
+      overflow-x: hidden;
+      padding: 0 2rem;
+      padding-bottom: 5rem;
+  
+    }
+    .home .landingpage .box{
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .home .landingpage .box .infobox{
+      margin-bottom: 20px;
+    }
+    .home .landingpage .box .infobox .infobox-boldtext{
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center!important;
+    } 
+  
+    .home .landingpage .box .infobox .infobox-slimtext{
+      text-align: center;
+      font-size: var(--font-mobie-small);
+    }
+    .home .card-info  p {
+      font-size: 16px;
+      text-align: center;
+    }
+    .card-info .link_A {
+      justify-content: center;
+    }
+    .home .infobox .contenimg1{
+      max-width:200px ;
+    }
+  
+  
+    /*-----box2----*/
+    .home .landingpage .box2 .infobox-boldtext{
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+    .home .box2 .infobox{
+      padding: 0px 2rem;
+    }
+    .box2 .infobox-slimtext{
+      font-size: var(--font-mobie-small);
+    }
+  
+    .infobox2-items{
+      padding: 50px 40px;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+    }
+    .infobox2-items .itemwrapper p{
+      font-size: var(--font-mobie-small);
+    }
+  
+    /*----------box 3 ---------*/
+  
+    .Box3{
+      padding: 0 2rem;
+    }
+    .Box3 .row {
+      flex-direction: column-reverse;
+    }
+    .Box3 .row .imgEais{
+      max-width:270px ;
+      max-height: 180px;
+    }
+    .content1-home .container .infobox-boldtext{
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+    .content1-home .container .infobox-slimtext{
+      font-size: var(--font-mobie-small);
+    }
+  
+    .content1-home .container .row .col-sm{
+      max-width: 100%;
+    }
+  
+    
+}
+  
+  
+  
+  

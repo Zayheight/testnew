@@ -1,0 +1,114 @@
+.Signin .landingpage {
+    margin: 0;
+    background-color: var(--color-background);
+    max-width: 100%;
+    padding: 0 100px;
+    padding-bottom: 5rem;
+
+}
+  
+.hidden {
+    display: none;
+}
+  
+.Signin::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 123px;
+    left:75%;
+    top: 180px;
+    filter: blur(100px);
+    background-color: #d59de6;
+}
+.Signin::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 120px;
+    left: 60%;
+    top: 500px;
+    background-color: #ffd06bc9;
+    filter: blur(90px);
+}
+
+.Formlogin{
+    margin-right: 40px;
+    width: 400px;
+    
+}
+  
+.btn-submitform{
+    background:#3081ed;
+  
+}
+.btn-submitform:hover{
+    background:#86c9fc;
+}
+  
+.font-login{
+    font-size: 35px;
+    font-weight: 600px;
+    letter-spacing: 0px;
+    line-height: 1.25;
+    margin-bottom: 30px;
+}
+  
+.Box-login{
+    margin-top: 100px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap
+}
+  
+.Box-login .contenimg2{
+    max-width: 350px;
+}
+
+
+@media (max-width: 750px) {
+    .Signin::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 53px;
+        left:20%;
+        top: 180px;
+        filter: blur(120px);
+        background-color: #d59de6;
+    }
+    .Signin::after {
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 120px;
+        left: 60%;
+        top: 550px;
+        background-color: #ffd06bc9;
+        filter: blur(90px);
+    }
+    .Signin .landingpage{
+        padding: 0 2rem;
+        padding-bottom: 5rem;
+    }
+    .Formlogin{
+        max-width: 280px;
+        margin-right: 0px;
+        width:250px;
+    } 
+
+    .Box-login{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .Box-login .contenimg2{
+       display: none;
+    }
+    .circleimglogin{
+        display: none;
+    }  
+}

@@ -1,0 +1,77 @@
+
+  
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+  }
+ 
+  
+  footer {
+    height: 350px;
+    padding: 85px 10px !important;
+    background-color: #05121f;
+  }
+  
+  .row .contacts {
+    display: grid;
+    grid-template-columns: repeat(1,3fr);
+    margin-top: 30px;
+    max-width: 70%;
+    padding: 0 100px;
+  }
+  .contacts .gridcontac{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+  }
+  .contacts h3 {
+    text-decoration: none;
+    font-size: var(--font-size--slimtext);
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .contacts h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  
+  .contacts a #bb {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .contacts a #bb:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  
+  @media (max-width:750) {
+    .row .contacts {
+      padding: 0px 50px;
+    }
+  }
+
+  
+
+  

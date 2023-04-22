@@ -1,0 +1,268 @@
+
+
+/* -------------- ROOT VARAIBLES ------------- */
+/* :root {
+  --black-color: #1a2e44;
+  --black-color-hover: #566583;
+
+  
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff; 
+  --color-back: rgb(0, 0, 0);
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+} */
+
+
+
+
+ /* body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f6f9;
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+  color: var(--color-dark);
+}  */
+
+
+.landingpage_dashbord{
+  background-color: #f6f6f9;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 100px;
+  max-width: 100%;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
+  padding-bottom: 5rem;
+}
+
+
+.landingpage_dashbord .container {
+  position: relative;
+  gap: 1.8rem;
+  max-width: 100%;
+  font-size: 0.88rem;
+  color:var(--black-color);
+}
+.landingpage_dashbord .container1 th{
+    color: #000000;
+  
+}
+.container1 h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color:var(--black-color) ;
+}
+.profile h1{
+  line-height: 200%;
+  padding-right: 30%;
+  display: inline;
+  font-size: 1.6rem;
+
+}
+
+
+aside {
+  height: 100vh;
+  position: fixed; 
+}
+
+
+/* ================== SIDEBAR ==================== */
+
+
+aside h3 {
+  font-weight: 500;
+}
+
+aside .sidebar a {
+  display: flex;
+  color: var(--color-info-dark);
+  text-decoration:none;
+  margin-left: 0rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 3.7rem;
+}
+
+aside .sidebar a span {
+  font-size: 1.6rem;
+  transition: all 300ms ease;
+}
+
+/* aside .sidebar a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+} */
+
+
+
+aside .sidebar a:hover {
+  color: var(--color-dark);
+}
+
+
+
+
+/* ================== MAIN ==================== */
+main {
+  margin-top: 1.4rem;
+  max-width: 100%;
+  
+}
+
+
+
+/* ================ RECENT ORDERS ================ */
+
+main .recent-orders{
+  margin-top: 1rem;
+}
+
+main .recent-orders h2 {
+  margin-bottom: 0.8rem;
+}
+
+.btnadduser{
+  background: #222673d5;
+}
+.btnadduser:hover{
+  background: #494b7cc8;
+}
+
+main .recent-orders table {
+  position: relative;
+  margin-top: 2rem;
+  background: var(--color-white);
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+  text-align: left;
+}
+
+
+
+
+main .recent-orders table:hover {
+  box-shadow: none;
+}
+
+th,
+td {
+    overflow-wrap: break-word;
+}
+
+main table tbody td {
+  height: 2.8rem;
+  border-bottom: 1px solid var(--color-light);
+  color: var(--color-dark-variant);
+}
+
+main table tfoot td {
+  height: 2.8rem;
+  border-bottom: 5px solid var(--color-dark);
+  color: var(--color-back);
+
+}
+
+main table tbody tr:last-child td {
+  border: none;
+}
+
+.recent-orders .warning{
+    color: var(--color-warning);
+}
+.recent-orders .danger{
+color: var(--color-danger);
+}
+
+
+.profile .Descriptions-info{
+  max-width: 550px;
+  padding: 2rem 0;
+}
+
+
+/* ================= RECENT UPDATES ================ */
+
+/*-------------form add user----------------*/
+.FormAdduserdata{
+  margin: 100px;
+  max-width: 400px;
+}
+
+
+@media (max-width: 780px){
+
+  .landingpage_dashbord{
+    padding: 0 2rem;
+  }
+
+  .pass{
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 550px){
+  .landingpage_dashbord{
+    padding: 0 2rem;
+  }
+  .pass-hidden{
+    display: none;
+  }
+}
+@media (max-width: 480px){
+  .mail-hidden{
+    display: none;
+  }
+
+  .landingpage_dashbord .container {
+    position: relative;
+    gap: 1.1rem;
+    max-width: 100%;
+    font-size: 12px;
+    color: var(--black-color);
+  }
+  .css-dev-only-do-not-override-10ed4xt.ant-btn{
+    font-size: 12px;
+  }
+  /*------------css usermanager--------------*/
+
+  .FormAdduserdata{
+    margin: 40px;
+    max-width: 400px;
+  }
+
+  
+}
+
+
+
+
