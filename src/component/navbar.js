@@ -29,7 +29,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/Signin">Log In </Link>
+              <Link to="/">Log In </Link>
             </li>
           </ul>
         </nav>
@@ -52,7 +52,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link onClick={logout}> Logout</Link>
+                <Link > Logout</Link>
               </li>
             </ul>
           </nav>
@@ -76,7 +76,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-                <Link onClick={logout}> Logout</Link>
+                <Link > Logout</Link>
               </li>
           </ul>
         </nav>
